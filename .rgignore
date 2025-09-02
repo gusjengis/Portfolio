@@ -4,3 +4,5 @@
 *.jpg
 *.pem
 *.lock
+/portfolio/Graph
+/portfolio/Snowflake
