@@ -49,7 +49,8 @@ body {
     overflow-y: hidden;
     -webkit-transform: translateZ(0);
     box-sizing:border-box;
-    margin:0;
+    margin:0px;
+    padding:0px;
     backdrop-filter: blur(5px);
 }
 
@@ -933,10 +934,13 @@ p {
 }
 
 .resume {
-    aspect-ratio: 8.5 / 11;
-    width: 828px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  border: 0; 
+  margin: 0; 
+  padding: 0; 
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  box-sizing: box;
+    overflow: hidden;
 }
 
 .clickableLink {

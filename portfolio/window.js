@@ -697,10 +697,11 @@ class Window {
                         this.changePage("resume");
 
                         let resume = createElement("iframe", "", "resume", this.content);
-                        resume.allow = "autoplay";
-                        resume.src = "https://drive.google.com/file/d/1YboLC9jSDS_35qkg8lcWfY0CKXFxq-cr/preview?";
+                        const pdfUrl = encodeURIComponent(
+                                "https://raw.githubusercontent.com/gusjengis/Resume/main/out/resume.pdf"
+                        );
+                        resume.src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${pdfUrl}#zoom=page-fit&scrollbar=0&navpanes=0&toolbar=0`;
                 }
-
         }
 
         projects() {
