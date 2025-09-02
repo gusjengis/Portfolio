@@ -1,4 +1,4 @@
-import init, {webmain} from "./pkg/PS.js";
+import init, {webmain} from "./pkg/WGPU.js";
 
 init().then(() => {
   webmain();

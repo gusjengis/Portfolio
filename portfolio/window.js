@@ -1101,7 +1101,7 @@ class Window {
         }
 
         perlin() {
-                this.createDemoPage("perlin", "Perlin Noise", "perlin/index.html");
+                this.createDemoPage("perlin", "Perlin Noise", "Perlin/index.html");
         }
 
         oscilloscopeVideo() {
