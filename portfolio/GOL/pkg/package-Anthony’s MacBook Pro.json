@@ -1,0 +1,14 @@
+{
+  "name": "WGPU",
+  "version": "0.1.0",
+  "files": [
+    "WGPU_bg.wasm",
+    "WGPU.js",
+    "WGPU.d.ts"
+  ],
+  "module": "WGPU.js",
+  "types": "WGPU.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

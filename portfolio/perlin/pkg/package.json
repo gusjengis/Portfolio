@@ -1,0 +1,12 @@
+{
+  "name": "PS",
+  "version": "0.1.0",
+  "files": [
+    "PS_bg.wasm",
+    "PS.js",
+    "PS.d.ts"
+  ],
+  "module": "PS.js",
+  "types": "PS.d.ts",
+  "sideEffects": false
+}
