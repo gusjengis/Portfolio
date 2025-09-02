@@ -72,12 +72,12 @@ class Window {
                 this.navBarText[4] = createTextElement("h4", "resume" + this.ID, "navBarText navBarPageText text link", "Resume", this.navBar);
                 // this.navBarText[5] = createTextElement("h4", null, "navBarText navBarPageText text", "|", this.navBar);
                 // this.navBarText[6] = createTextElement("h4", "about"+this.ID, "navBarText navBarPageText text link", "About", this.navBar);
-                this.navBarButton[0] = createTextElement("button", "xButton" + this.ID, "windowButton text cornerButton", '\u2A09', this.navBar);
-                this.navBarButton[1] = createTextElement("button", "maxButton" + this.ID, "windowButton text", '\u25A2', this.navBar);
-                this.navBarButton[2] = createTextElement("button", "fullButton" + this.ID, "windowButton text", '\u2922', this.navBar);
-                this.navBarButton[3] = createTextElement("button", "refreshButton" + this.ID, "windowButton text", '\u27F3', this.navBar);
-                this.navBarButton[4] = createTextElement("button", "controlsButton" + this.ID, "windowButton text", '\u003F', this.navBar);
-                this.navBarButton[5] = createTextElement("button", "minButton" + this.ID, "windowButton text", '\u2212', this.navBar);
+                this.navBarButton[0] = createTextElement("button", "xButton" + this.ID, "windowButton xButton text cornerButton", '\u2A2F', this.navBar);
+                this.navBarButton[1] = createTextElement("button", "maxButton" + this.ID, "windowButton maxButton text", '\u25A2', this.navBar);
+                this.navBarButton[2] = createTextElement("button", "fullButton" + this.ID, "windowButton fullButton text", '\u2922', this.navBar);
+                this.navBarButton[3] = createTextElement("button", "refreshButton" + this.ID, "windowButton refreshButton text", '\u27F3', this.navBar);
+                this.navBarButton[4] = createTextElement("button", "controlsButton" + this.ID, "windowButton controlsButton text", '\u003F', this.navBar);
+                this.navBarButton[5] = createTextElement("button", "minButton" + this.ID, "windowButton minButton text", '\u2212', this.navBar);
                 this.content = createElement("div", "content" + this.ID, "contentDiv", this.window);
                 this.title = createTextElement("h4", "title" + this.ID, "title text", this.title, this.navBar);
                 // this.setTitle("Home");
