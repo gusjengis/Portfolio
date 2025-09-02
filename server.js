@@ -7,6 +7,7 @@ let local = true;
 let port = 443;
 let httpPort = 80;
 if (local) {
+    port = 8443;
     httpPort = 8080;
 }
 var errorPage;

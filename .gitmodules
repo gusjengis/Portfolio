@@ -1,0 +1,8 @@
+[submodule "Snowflake"]
+	path = portfolio/Snowflake
+	url = https://github.com/gusjengis/Snowflake.git
+	branch = main
+[submodule "Graph"]
+	path = portfolio/Graph
+	url = https://github.com/gusjengis/Graph.git
+	branch = main
