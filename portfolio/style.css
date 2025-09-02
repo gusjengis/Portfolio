@@ -100,12 +100,12 @@ body {
     border-right: none;
 }
 
-#xButton { position: relative; top: 0px; }
-#maxButton { position: relative; top: -100px; }
-#fullButton { position: relative; top: 0px; }
-#refreshButton { position: relative; top: 0px; }
-#controlsButton { position: relative; top: 0px; }
-#minButton { position: relative; top: 0px; }
+#xButton::first-line { position: relative; top: 0px; }
+#maxButton::first-line { position: relative; top: 0px; }
+#fullButton::first-line { position: relative; top: 100px; }
+#refreshButton::first-line { position: relative; top: 0px; }
+#controlsButton::first-line { position: relative; top: 0px; }
+#minButton::first-line { position: relative; top: 0px; }
 
 
 .contentDiv {
