@@ -700,7 +700,7 @@ class Window {
                         const pdfUrl = encodeURIComponent(
                                 "https://raw.githubusercontent.com/gusjengis/Resume/main/out/resume.pdf"
                         );
-                        resume.src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${pdfUrl}#zoom=page-fit&scrollbar=0&navpanes=0&toolbar=0`;
+                        resume.src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${pdfUrl}#zoom=page-fit`;
                 }
         }
 
