@@ -30,9 +30,9 @@ class Window {
                 this.sizeMode = 0;
                 this.pageSpecificResizeFuncs = [];
                 this.links = {
-                        "projects-perlin": new LinkDef("h4", "projects-perlin" + this.ID, "Perlin Noise", "Rust | July 2023", "assets/perlinThumb.png", false, "Implemented perlin noise on the GPU from scratch. Used a few layers of this noise to generate some basic terrain. Using this to work out some 3D rendering and lighting.", "perlin"),
-                        "projects-gol": new LinkDef("h4", "projects-gol" + this.ID, "Game of Life", "Rust | June 2023", "assets/golThumb.png", false, "Conway's Game of Life. Used WebGPU compute shaders for this, runs really well, but requires a browser that supports it(Chrome or Edge rn).", "gol"),
-                        "projects-webGPU": new LinkDef("h4", "projects-webGPU" + this.ID, "WebGPU", "Rust | May 2023", "assets/WGPUThumb.png", false, "WebGPU Test, programmed in Rust and compiled to WASM. Can compile this to native as well. Write once, run anywhere, very cool.", "webGPU"),
+                        "projects-perlin": new LinkDef("h4", "projects-perlin" + this.ID, "Perlin Noise", " | July 2023", "assets/perlinThumb.png", false, "Implemented perlin noise on the GPU from scratch. Used a few layers of this noise to generate some basic terrain. Using this to work out some 3D rendering and lighting.", "perlin"),
+                        "projects-gol": new LinkDef("h4", "projects-gol" + this.ID, "Game of Life", " | June 2023", "assets/golThumb.png", false, "Conway's Game of Life. Used WebGPU compute shaders for this, runs really well, but requires a browser that supports it(Chrome or Edge rn).", "gol"),
+                        "projects-webGPU": new LinkDef("h4", "projects-webGPU" + this.ID, "WebGPU", " | May 2023", "assets/WGPUThumb.png", false, "WebGPU Test, programmed in Rust and compiled to WASM. Can compile this to native as well. Write once, run anywhere, very cool.", "webGPU"),
                         "projects-pLife": new LinkDef("h4", "projects-pLife" + this.ID, "Particle Life", "JS | January 2023", "assets/pLifeThumb.png", false, "Particle Life, inspired by this video: https://www.youtube.com/watch?v=p4YirERTVF0", "pLife"),
                         "projects-webGL": new LinkDef("h4", "projects-webGL" + this.ID, "WebGL", "JS | December 2022", "assets/webGLThumb.png", false, "I'm trying to learn webGL, this is the program I'm using to do that. It will showcase the effects I've come up with.", "webGL"),
                         "projects-oscilloscopevideo": new LinkDef("h4", "projects-oscilloscopevideo" + this.ID, "Oscilloscope Video", "JS | September 2022", "assets/oscilloscopeThumb.png", false, "I use this to provide video input to my CRT oscilloscope.", "oscilloscopeVideo"),
@@ -496,7 +496,6 @@ class Window {
                         createLink(this.links["projects-oscilloscopevideo"], demos);
                         createLink(this.links["projects-oscilloscope"], demos);
                         createLink(this.links["projects-wireframe"], demos);
-                        createLink(this.links["projects-sound"], demos);
                         createLink(this.links["projects-handheld"], demos);
                         createLink(this.links["projects-crt"], demos);
                         createLink(this.links["projects-spacegame"], demos);
@@ -716,7 +715,6 @@ class Window {
                         createLink(this.links["projects-oscilloscopevideo"], background);
                         createLink(this.links["projects-oscilloscope"], background);
                         createLink(this.links["projects-wireframe"], background);
-                        createLink(this.links["projects-sound"], background);
                         createLink(this.links["projects-handheld"], background);
                         createLink(this.links["projects-crt"], background);
                         createLink(this.links["projects-spacegame"], background);
@@ -956,9 +954,9 @@ class Window {
                 this.helpEntry("-", "Speed Down", "Decreases animation speed.");
                 this.helpEntry("1", "Effect 1", "Adds effect 1, horizontal RGB bars scrolling vertically.");
                 this.helpEntry("2", "Effect 2", "Adds effect 2, vertical RGB bars scrolling horizontally.");
-                this.helpEntry("1", "Effect 3", "Adds effect 3, horizontal greyscale bars scrolling vertically.");
-                this.helpEntry("1", "Gradient 1", "Adds gradient 1, a red, green, a blue orb glowing and orbiting around center.");
-                this.helpEntry("1", "Gradient 2", "Adds gradient 2, inverse of gradient 1.");
+                this.helpEntry("3", "Effect 3", "Adds effect 3, horizontal greyscale bars scrolling vertically.");
+                this.helpEntry("4", "Gradient 1", "Adds gradient 1, a red, green, a blue orb glowing and orbiting around center.");
+                this.helpEntry("5", "Gradient 2", "Adds gradient 2, inverse of gradient 1.");
         }
 
         golHelp() {
@@ -1106,7 +1104,7 @@ class Window {
         }
 
         oscilloscopeVideo() {
-                this.createDemoPage("oscilloscopeVideo", "Oscilloscope Video", "oscilloscope_video/index.html");
+                this.createDemoPage("oscilloscopeVideo", "Oscilloscope Video", "Oscilloscope-Video/index.html");
         }
 
         gbaCover() {

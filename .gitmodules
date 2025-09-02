@@ -6,3 +6,47 @@
 	path = portfolio/Graph
 	url = https://github.com/gusjengis/Graph.git
 	branch = main
+[submodule "webGL"]
+	path = portfolio/webGL
+	url = https://github.com/gusjengis/webGL.git
+	branch = main
+[submodule "Wireframe"]
+	path = portfolio/Wireframe
+	url = https://github.com/gusjengis/Wireframe.git
+	branch = main
+[submodule "Synthesizer"]
+	path = portfolio/Synthesizer
+	url = https://github.com/gusjengis/Synthesizer.git
+	branch = main
+[submodule "pLife"]
+	path = portfolio/pLife
+	url = https://github.com/gusjengis/pLife.git
+	branch = main
+[submodule "Platformer"]
+	path = portfolio/Platformer
+	url = https://github.com/gusjengis/Platformer.git
+	branch = main
+[submodule "Paint"]
+	path = portfolio/Paint
+	url = https://github.com/gusjengis/Paint.git
+	branch = main
+[submodule "Oscilloscope-Video"]
+	path = portfolio/Oscilloscope-Video
+	url = https://github.com/gusjengis/Oscilloscope-Video.git
+	branch = main
+[submodule "Morse_Code"]
+	path = portfolio/Morse_Code
+	url = https://github.com/gusjengis/Morse_Code.git
+	branch = main
+[submodule "MinecraftDemo"]
+	path = portfolio/MinecraftDemo
+	url = https://github.com/gusjengis/MinecraftDemo.git
+	branch = main
+[submodule "Line_Test"]
+	path = portfolio/Line_Test
+	url = https://github.com/gusjengis/Line_Test.git
+	branch = main
+[submodule "CRT"]
+	path = portfolio/CRT
+	url = https://github.com/gusjengis/CRT.git
+	branch = main
