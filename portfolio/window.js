@@ -698,7 +698,7 @@ class Window {
 
                         let resume = createElement("iframe", "", "resume", this.content);
                         const pdfUrl = encodeURIComponent(
-                                "https://raw.githubusercontent.com/gusjengis/Resume/main/out/resume.pdf"
+                                "https://raw.githubusercontent.com/gusjengis/Resume/main/out/resume-rust.pdf"
                         );
                         resume.src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${pdfUrl}#zoom=page-fit`;
                 }
