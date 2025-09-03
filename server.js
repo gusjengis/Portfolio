@@ -3,10 +3,10 @@ const http = require('http');
 const fs = require('fs');
 // const express = require('express');
 const path = require('path');
-let local = false;
+let dev = process.argv.includes('--dev') || process.env.NODE_ENV !== 'production';
 let port = 443;
 let httpPort = 80;
-if (local) {
+if (dev) {
         port = 8443;
         httpPort = 8080;
 }
@@ -39,7 +39,7 @@ function isURL(ext) {
 
 
 const httpServer = http.createServer(function (req, res) {
-        if (local) {
+        if (dev) {
                 res.writeHead(301, { Location: "https://localhost" + req.url });
         } else {
                 res.writeHead(301, { Location: "https://por:tfolio.agreenweb.com" + req.url });
@@ -108,10 +108,14 @@ const server = https.createServer({ cert, ca, key }, function (req, res) {
                         if (error) {
 
                                 res.write(errorPage);//"<h1>404: File not found.</h1>");
-                                // console.log("404: File not found. " + filePath + "   (" + req.socket.remoteAddress + ")");
+                                if (dev) {
+                                        console.log("404: File not found. " + filePath + "   (" + req.socket.remoteAddress + ")");
+                                }
                         } else {
                                 res.write(data);
-                                // console.log("(" + req.socket.remoteAddress + ") Files served." + filePath);
+                                if (dev) {
+                                        console.log("(" + req.socket.remoteAddress + ") Files served." + filePath);
+                                }
                         }
                         res.end();
                 });
