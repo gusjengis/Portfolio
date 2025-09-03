@@ -108,10 +108,10 @@ const server = https.createServer({ cert, ca, key }, function (req, res) {
                         if (error) {
 
                                 res.write(errorPage);//"<h1>404: File not found.</h1>");
-                                console.log("404: File not found. " + filePath + "   (" + req.socket.remoteAddress + ")");
+                                // console.log("404: File not found. " + filePath + "   (" + req.socket.remoteAddress + ")");
                         } else {
                                 res.write(data);
-                                console.log("(" + req.socket.remoteAddress + ") Files served." + filePath);
+                                // console.log("(" + req.socket.remoteAddress + ") Files served." + filePath);
                         }
                         res.end();
                 });
