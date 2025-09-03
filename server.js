@@ -3,7 +3,7 @@ const http = require('http');
 const fs = require('fs');
 // const express = require('express');
 const path = require('path');
-let dev = process.argv.includes('--dev') || process.env.NODE_ENV !== 'production';
+let dev = process.argv.includes('--dev');
 let port = 443;
 let httpPort = 80;
 if (dev) {
