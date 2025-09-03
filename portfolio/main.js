@@ -40,6 +40,8 @@ document.onclick = function () {
                                 windowArr[i].iframe.style.pointerEvents = "all";
                 }
         }
+        // console.log("You're fired");
+        // console.log(e.clientX);
         buildQS();
 }
 

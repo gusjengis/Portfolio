@@ -94,13 +94,13 @@ class Window {
                 }
 
                 this.window.onmouseup = function (e) {
-                        if (e.clientX <= 0 && this.getBoundingClientRect().left < 0) {
+                        const canvasWidth = document.documentElement.clientWidth;
+                        if (e.clientX <= 5 && this.getBoundingClientRect().left < 5) {
                                 this.owner.dockLeft();
                                 this.owner.focus();
-                        } else if (e.clientX >= canvas.width - 5 && this.getBoundingClientRect().right > canvas.width - 5) {
+                        } else if (e.clientX >= canvasWidth - 5 && this.getBoundingClientRect().right > canvasWidth - 5) {
                                 this.owner.dockRight();
                                 this.owner.focus();
-
                         }
                         if (e.button == 4) this.owner.pageUp();
                         if (e.button == 3) this.owner.pageDown();
